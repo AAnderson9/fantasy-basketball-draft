@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Fantasy Draft</title>
+    <link href = "styles.css" rel = "stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id = "grid">
+        <header>
+            <h1>Fantasy Basketball Draft</h1>
+        </header>
+        <div id = "availablePlayersView">
+            <h3>Pick the number of the team that is selecting</h3>
+            <div id = "dropbox-wrapper">
+                <label for = "teamID">Team Number: </label><select id = "teamID" name = "teamID"></select>
+            </div>
+        </div>
+        <div id = "teamsView"></div>
+        <div id = "formsView">
+            <form id = "addTeamForm">
+                <h3>Add a Team</h3>
+                <label>Team Name: </label><input type = "text" id = "nameInput" name = "teamName">
+                <button id = "addTeamBtn">Add Team</button> 
+            </form>
+            
+        </div>
+    </div>
+    <script src = "client.js"></script>
+</body>
+</html>
